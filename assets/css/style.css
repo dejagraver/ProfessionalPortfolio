@@ -1,5 +1,5 @@
 :root {
-    --primary-color; #F8F8FF;
+    --primary-color: #F8F8FF;
     --secondary-color:#000000;
     --tertiary-color: #F5F5F5;
 }
@@ -54,72 +54,149 @@ header nav ul li a:hover {
     border-radius: 15px;
     text-shadow: none;
 }
-/* HEADER STYLES END */
+/* Header styles end */
 
-/* "About Me" STYLES START */
 
 .hero-image {
     background-image: url('../images/image.jpeg');
     background-size: cover;
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    background-attachment: inherit;
     background-position: 45%;
+    margin: 0;
 }
 
 .hero-text {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
     margin: 22.5%;
-    color: #fff;
-    font-family: Helvetica, Arial;
-    font-style: lighter, italic;
-    font-size: 15px;
 }
 
 .row {
     display: flex;
-    justify-content: center;
     background-color: #F8F8FF;
-}
-
-.section-title {
     font-family: Helvetica, Arial;
     font-weight: lighter;
     font-size: 1.55vw;
+
+}
+
+.section-title {
     border-right: 1.75px solid;
     color: var(--secondary-color);
-    width: 15%;
-    }
+    width: 20%;
+    margin: 30px;
+}
 
 .intro-text {
     font-size: 15px;
-    font-family: Helvetica, Arial;
-    font-weight: lighter;
     display: flex;
     justify-content: space-between;
-    margin: 20px 20px 20px 20px;
+    margin: 20px;
+    width: 80%;
 }
 
 .profile-img {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+    display: flex;
+    justify-content: space-around;
+    width: 200px;
+    height: 200px;
+  }
+  
+  .profile-img img {
+    object-fit: cover;
+  }
+
+ .run-buddy-img {
+    background-image: url('../images/runbuddy.jpeg');
+    background-size: cover;
+    border: 3px solid #ad987e;
+    border-radius: 2.5px;
+    display: flex;
+    margin: 0;
+    width: 100%; 
+    height: 300px;
+ }
+
+ .run-buddy-img a {
+    background-color: #ad987e; 
+    width: 20%;
+    height: 20%;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+ }
+
+ .horiseon-img {
+    background-image: url('../images/horiseon.jpeg');
+    background-size: cover;
+    border: 3px solid #ad987e;
+    border-radius: 2.5px;
+    margin: 0;
+    bottom: 50%;
+    width: 100%; 
+    height: 300px;
+ }
+
+
+.intro-text address{
+    display: flex;
+    justify-content: space-around;
 }
 
-.profile-img img {
-  max-width: 30%;
-  max-height: 30%;
+.intro-text address div a {
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    margin: 20px;
+    color: #000000;
+    font-style: italic;
 }
 
-.portfolio {
+.intro-text address div a:hover {
+    border-radius: 3px;
+    margin: 10px;
+    color: var(--primary-color);
+    background-color:#ad987e;
+  }
+ 
+  
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+    header {
+      padding-bottom: 0;
+      justify-content: center;
+      position: relative;
+    }
+  
+    header h1 {
+      width: 100%;
+      text-align: center;
+    }
+  
+    header nav ul {
+      margin-top: 20px;
+      width: 100%;
+      justify-content: center;
+    }
+  
+    header nav ul li a {
+      font-size: 20px;
+    }
 
-}
+  }
+  
+  /* MEDIA QUERY FOR TABLETS AND SMALLER */
+  @media screen and (max-width: 768px) {
+    section {
+      padding: 30px 15px;
+    }
+  }
 
-.footer {
-
-}
+  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+  
+    .section-title {
+      width: 95%;
+    }
+  
+  }
