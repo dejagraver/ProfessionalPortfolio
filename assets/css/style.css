@@ -1,11 +1,17 @@
 :root {
     --primary-color; #F8F8FF;
-    --secondary-color:#FFF0F5;
+    --secondary-color:#000000;
     --tertiary-color: #F5F5F5;
 }
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 header {
-    padding: 20px 35px;
+    padding: 15px 30px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -14,9 +20,8 @@ header {
 
 header h1 {
     font-size: 36px;
-    font-style: verdana;
-    font-weight: bold;
-    margin: 0;
+    font-family: Helvetica, Arial;
+    font-weight: lighter;
 }
 
 header a {
@@ -36,7 +41,85 @@ header nav ul {
 }
 
 header nav ul li a {
+    color: var(--secondary-color);
     padding: 5px 10px;
+    font-family: Helvetica, Arial;
     font-weight: lighter;
     font-size: 1.55vw;
+}
+
+header nav ul li a:hover {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 15px;
+    text-shadow: none;
+}
+/* HEADER STYLES END */
+
+/* "About Me" STYLES START */
+
+.hero-image {
+    background-image: url('../images/image.jpeg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    background-attachment: inherit;
+    background-position: 45%;
+}
+
+.hero-text {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin: 22.5%;
+    color: #fff;
+    font-family: Helvetica, Arial;
+    font-style: lighter, italic;
+    font-size: 15px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    background-color: #F8F8FF;
+}
+
+.section-title {
+    font-family: Helvetica, Arial;
+    font-weight: lighter;
+    font-size: 1.55vw;
+    border-right: 1.75px solid;
+    color: var(--secondary-color);
+    width: 15%;
+    }
+
+.intro-text {
+    font-size: 15px;
+    font-family: Helvetica, Arial;
+    font-weight: lighter;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 20px 20px 20px;
+}
+
+.profile-img {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.profile-img img {
+  max-width: 30%;
+  max-height: 30%;
+}
+
+.portfolio {
+
+}
+
+.footer {
+
 }
