@@ -19,3 +19,5 @@ git@github.com:dejagraver/ProfessionalPortfolio.git
 URL of deployed Application:
 https://dejagraver.github.io/ProfessionalPortfolio/
 
+![image](https://user-images.githubusercontent.com/78667882/110270623-3a9a2500-7f94-11eb-879f-f3b2f3573bb7.png)
+![image](https://user-images.githubusercontent.com/78667882/110270654-4be33180-7f94-11eb-9285-99288839b23d.png)
