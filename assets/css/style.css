@@ -55,6 +55,7 @@ header nav ul li a:hover {
     border-radius: 15px;
     text-shadow: none;
 }
+/* Header styles end */
 
 /* Hero styles start */
 .hero-image {
@@ -68,6 +69,7 @@ header nav ul li a:hover {
 .hero-text {
     margin: 22.5%;
 }
+/* Hero styles end */
 
 /* Body Styles start */
 .row {
@@ -92,6 +94,7 @@ header nav ul li a:hover {
     margin: 20px;
     width: 80%;
 }
+/* Body styles end */
 
 /* "About Me" styles start*/
 .profile-img {
@@ -104,6 +107,7 @@ header nav ul li a:hover {
   .profile-img img {
     object-fit: cover;
   }
+/* "About Me" styles end */
 
   /* "Work" styles start*/
  .run-buddy-img {
@@ -162,8 +166,9 @@ header nav ul li a:hover {
     cursor: pointer;
     margin: 5px;
  }
+/* "Work" styles end */
 
-/* "Contact Me" Styles start */
+/* "Contact Me" styles start */
 .intro-text address{
     display: flex;
     justify-content: space-around;
@@ -172,27 +177,62 @@ header nav ul li a:hover {
 .intro-text address div a {
     display: flex;
     justify-content: space-between;
-    background-color: thistle;
     border-radius: 3px;
     text-decoration: none;
     margin: 20px;
     color: #000000;
     font-style: italic;
 }
-
+/* "Contact Me" styles start*/
   
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
-    footer div address {
-        width: 100%;
-        text-align: center;
+    header {
+      padding-bottom: 0;
+      justify-content: center;
+      position: relative;
     }
-}
+  
+    header h1 {
+      width: 100%;
+      text-align: center;
+    }
+  
+    header nav ul {
+      margin-top: 20px;
+      width: 100%;
+      justify-content: center;
+    }
+  
+    header nav ul li a {
+      font-size: 20px;
+    }
+  
+    .row, .section-title {
+        flex: 0 32%;
+        margin-right: 0;
+    }
+  }
+  
   /* MEDIA QUERY FOR TABLETS AND SMALLER */
   @media screen and (max-width: 768px) {
-  }
+    
+    .row, .section-title {
+        display: table-header-group;
+    }
 
-  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
-@media screen and (max-width: 575px) {
-}
+    .profile-img {
+        flex: 0 32%;
+        margin-right: 0;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+  }
   
+  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+  @media screen and (max-width: 575px) {
+   
+    .row, .section-title {
+      display: table-header-group;
+  }
+}
