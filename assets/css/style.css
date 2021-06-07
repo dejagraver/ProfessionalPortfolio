@@ -115,7 +115,7 @@ header nav ul li a:hover {
     object-fit: cover;
   }
 
-  .tonight-img {
+  /* .tonight-img {
     display: flex;
     justify-content: space-around;
     width: 200px;
@@ -127,7 +127,7 @@ header nav ul li a:hover {
     text-align: center;
     width: 100px;
   }
-/* "About Me" styles end */
+"About Me" styles end */
 
   /* "Work" styles start*/
  .run-buddy-img {
