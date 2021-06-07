@@ -58,8 +58,16 @@ header nav ul li a:hover {
 /* Header styles end */
 
 /* Hero styles start */
-.hero-image {
+/* .hero-image {
     background-image: url('../images/image.jpeg');
+    background-size: cover;
+    display: flex;
+    background-position: 45%;
+    margin: 0;
+} */
+
+.help-image {
+    background-image: url('../images/help.jpeg');
     background-size: cover;
     display: flex;
     background-position: 45%;
